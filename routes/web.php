@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('/home', function () {
+    return view('pages.home');
+})->name('home');
+
+
 Route::get('/blog', function () {
     return view('pages.blog');
 })->name('blog');
