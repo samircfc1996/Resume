@@ -22,11 +22,11 @@
 <div class="content-wrapper">
     <aside>
         <div class="profile-img-wrapper">
-            <img src="assets/images/Profile.png" alt="profile">
+            <img src="assets/images/samir.jpg" alt="profile">
         </div>
-        <h1 class="profile-name">Daisy Murphy</h1>
+        <h1 class="profile-name">Samir Mammadov</h1>
         <div class="text-center">
-            <span class="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+            <span class="badge badge-white badge-pill profile-designation">Backend Developer</span>
         </div>
         {{menu('socialMedia','components.socialMedia')}}
         <div class="widget">
