@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBlogPagesTable extends Migration
+class CreateEducationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class CreateBlogPagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('blog_pages', function (Blueprint $table) {
+        Schema::create('education', function (Blueprint $table) {
             $table->id();
+            $table->string('years');
+            $table->string('major');
+            $table->string('degree');
+            $table->string('school');
+            $table->longText('description');
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ class CreateBlogPagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog_pages');
+        Schema::dropIfExists('education');
     }
 }
